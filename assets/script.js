@@ -13,7 +13,8 @@ $("#citySearch").on("click", function(event) {
     var state = $("#state-input").val().trim();
     var tomDescrip = ""
     var localDiv = $("#localDiv")
-
+    window.scrollTo(0,document.body.scrollHeight);
+    
     
     localWeather(city, state, localDiv)
     forecast(city, state)
@@ -24,7 +25,39 @@ $("#citySearch").on("click", function(event) {
     searchCitiesInTown(city);
     $("#imageCity").empty();
     $("#breweryList").empty();
+
 })
+
+$("#state-input").keypress(function(event) {
+    if (event.which == 13) {
+      console.log("hi");
+      event.preventDefault();
+      var city = $("#city-input")
+        .val()
+        .trim();
+      var state = $("#state-input")
+        .val()
+        .trim();
+      var tomDescrip = "";
+      var localDiv = $("#localDiv");
+      window.scrollTo(0, document.body.scrollHeight);
+      if (event.which == 13) {
+        localWeather(city, state, localDiv);
+        forecast(city, state);
+        saveCitySearch(city);
+        $("#currentWeather").append(localDiv);
+        $("#currentWeather").append(tomDescrip);
+        breweries(city, state);
+        searchCitiesInTown(city);
+        $("#imageCity").empty();
+        $("#breweryList").empty();
+      }
+    }
+  });
+
+
+
+
 
 // saving to local storage 
 function saveCitySearch(city) {
@@ -173,10 +206,5 @@ function breweries(city, state) {
                 return phonenum;
             }
         }
-    }
-
-)}
-
-
-
-});
+    })
+}})
