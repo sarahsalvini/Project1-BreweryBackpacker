@@ -25,21 +25,11 @@ Our site was created for a frequent traveler who enjoys learning and trying loca
 * Does not use alerts, confirms or prompts ✓
 
 * Must be deployed to GitHub Pages ✓
+<br>
+<br>
+<br>
 
-
-## Presentation Requirements
-
-* Elevator pitch: a one minute description of your application
-
-* Concept: What is your user story? What was your motivation for development?
-
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-
-* Demo: Show our site!
-
-* Directions for Future Development
-
-* Links to the deployed application and the GitHub repository
+view site: https://sarahsalvini.github.io/Project1-BreweryBackpacker/
 
 
 ## Grading Metrics 
