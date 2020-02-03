@@ -27,10 +27,10 @@ Our site was created for a frequent traveler who enjoys learning and trying loca
 * Must be deployed to GitHub Pages ✓
 <br>
 <br>
-<br>
 
 view site: https://sarahsalvini.github.io/Project1-BreweryBackpacker/
-
+<br>
+<br>
 
 ## Grading Metrics 
 
